@@ -1,0 +1,27 @@
+<div class="row shadow-sm m-0 mt-2 bg-white">
+    <p class="fs-5 text-black-50 bg-warning mb-0">EDUCACION </p>
+</div>
+<table class="table table-sm table-bordered bg-white mb-2">
+    <tbody>
+        <tr *ngFor="let Educacion of expe">
+            <td class="align-middle text-center"><img class="" src="{{Educacion.fotoE}}" width="100px" height="55px">
+            </td>
+            <td>
+                <p class="fs-6 fw-bold text-muted">{{Educacion.nombreE}}</p>
+                <p class="fs-6 fst-italic">{{Educacion.fechaI}}-{{Educacion.fechaF}}</p>
+                <p class="fs-6">{{Educacion.descripcionE}}</p>
+            </td>
+            <td class="align-middle text-center" *ngIf="isLogged"><button class="btn btn-warning"
+                    routerLink="/editedu/{{Educacion.id}}"><i class="bi bi-pencil"></i></button></td>
+
+            <td class="align-middle text-center" *ngIf="isLogged"><button class="btn btn-danger"
+                    (click)="delete(Educacion.id)"><i class="bi bi-x-circle"></i></button></td>
+
+        </tr>
+
+    </tbody>
+    <div class="p-2 " *ngIf="isLogged">
+        <button type="button" class="btn btn-success " routerLink="/nuevaedu" *ngIf="isLogged">
+            Agregar Nueva Educacion
+        </button>
+    </div>
