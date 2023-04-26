@@ -35,8 +35,8 @@ git clone ``` https://github.com/nico0cul/portofolioFrontend.git ```
 ## 🛠Uso
 
 ### Navegación
-  Accediendo a la web app se puede navegar normalmente sin tener que estar logueado, la app al estar alojada en un 
-  servidor gratuito de render tardara algunos minutos en cargar la primera vez.
+  Accediendo a la web app en https://pnfg-91647.web.app se puede navegar normalmente sin tener que estar logueado, 
+  la app al estar alojada en un servidor gratuito de render tardara algunos minutos en cargar la primera vez.
   
   Para poder realizar las funciones de CRUD se debe tener acceso a las credenciales de usuario.
   
