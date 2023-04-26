@@ -76,7 +76,7 @@ git clone ``` https://github.com/nico0cul/portofolioFrontend.git ```
    
 ## Apéndice  
 
-Problemas de la version 15 de angular
+❗ Problemas de la version 15 de angular
   
   Un problema que surgió fue que en la versión 15 de Angular no se crea automáticamente la carpeta ```environments```
   por lo que no se instalan correctamente las dependencias de Firebase, por tal motivo se debe crear dicha
