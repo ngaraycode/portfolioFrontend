@@ -30,7 +30,7 @@ git clone ``` https://github.com/nico0cul/portofolioFrontend.git ```
 
 3-Compilar y montar el proyecto utilizando el comando ```ng serve```
 
-4-Tener corriendo un servidor con el backend para que los datos viajen correctamente entre la base de datos
+4-Tener corriendo un servidor con el backend https://github.com/nico0cul/portfolioBackend para que los datos viajen correctamente entre el back y el front.
   
 ## 🛠Uso
 
