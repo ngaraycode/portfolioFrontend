@@ -3,7 +3,7 @@
 ## 📝 Descripción
 
   El proyecto consiste en un portfolio web personal como trabajo final del curso de Argentina Programa, donde se aplica los conocimientos
-  aprendidos en los diferentes módulos cursados HTML,CSS,JAVA,JAVASCRIP,ANGULAR,MYSQL,SPRING
+  aprendidos en los diferentes módulos cursados ```HTML-CSS-JAVA-JAVASCRIP-ANGULAR-MYSQL-SPRING```
   
   ![login](https://user-images.githubusercontent.com/94196914/234583736-0c9a456e-68af-4052-a507-f29d00286430.png)
   
