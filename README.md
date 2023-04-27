@@ -5,7 +5,7 @@
   El proyecto consiste en un portfolio web personal como trabajo final del curso de Argentina Programa, donde se aplica los conocimientos
   aprendidos en los diferentes módulos cursados.
   
-  ![login](https://user-images.githubusercontent.com/94196914/234583736-0c9a456e-68af-4052-a507-f29d00286430.png)
+  ![Opera Instantánea_2023-04-27_201022_pnfg-91647 web app](https://user-images.githubusercontent.com/94196914/235009732-9f5c1a61-b4c9-4e21-9484-74f570b4e8ac.png)
   
   El portfolio es responsive, se adapta a cualquier resolución, aunque esta seteado para una resolución máxima de 800px por el diseño que
   se eligio,
