@@ -1,0 +1,20 @@
+<div class="container" *ngIf="header">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="card p-2 m-2 bg-warning bg-gradient" style="width: 25rem;">
+            <div class="">
+                <div>
+                    <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                        <div class="form-group">
+                            <label for="nombre" class="fs-5 text-dark">Cargar Header</label>
+                            
+                            <input type="file" class="form-control" id="nombre" name="nombre"
+                                [(ngModel)]="header.nombre" (change)="uploadImage($event)"accept=".jpg,.jpeg,.png">
+                        </div>
+                        <br>
+                        <button class="btn btn-primary">Editar Header</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>

@@ -25,6 +25,17 @@ import { EditExperienciaComponent } from './componentes/experiencia/edit-experie
 import { NewEducacionComponent } from './componentes/educacion/new-educacion/new-educacion.component';
 import { EditEducacionComponent } from './componentes/educacion/edit-educacion/edit-educacion.component';
 import { EditAcercaDeComponent } from './componentes/acercade/edit-acerca-de/edit-acerca-de.component';
+import { NewProyectoComponent } from './componentes/proyectos/new-proyecto/new-proyecto.component';
+import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto/edit-proyecto.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
+import { NewHabilidadesComponent } from './componentes/habilidades/new-habilidades/new-habilidades.component';
+import { EditHabilidadesComponent } from './componentes/habilidades/edit-habilidades/edit-habilidades.component';
+import { EditHeaderComponent } from './componentes/header/edit-header/edit-header.component';
+import { HabilidadesBlandasComponent } from './componentes/habilidades-blandas/habilidades-blandas.component';
+import { NewHabilidadesBlandasComponent } from './componentes/habilidades-blandas/new-habilidades-blandas/new-habilidades-blandas.component';
+import { EditHabilidadesBlandasComponent } from './componentes/habilidades-blandas/edit-habilidades-blandas/edit-habilidades-blandas.component';
 
 
 @NgModule({
@@ -45,7 +56,15 @@ import { EditAcercaDeComponent } from './componentes/acercade/edit-acerca-de/edi
     EditExperienciaComponent,
     NewEducacionComponent,
     EditEducacionComponent,
-    EditAcercaDeComponent
+    EditAcercaDeComponent,
+    NewProyectoComponent,
+    EditProyectoComponent,
+    NewHabilidadesComponent,
+    EditHabilidadesComponent,
+    EditHeaderComponent,
+    HabilidadesBlandasComponent,
+    NewHabilidadesBlandasComponent,
+    EditHabilidadesBlandasComponent
   ],
   imports: [
     BrowserModule,
@@ -71,10 +90,13 @@ import { EditAcercaDeComponent } from './componentes/acercade/edit-acerca-de/edi
       "lazy": true}),
     AppRoutingModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [
-    interceptorProvider
+    interceptorProvider,
+    Storage
   ],
   bootstrap: [AppComponent]
 })

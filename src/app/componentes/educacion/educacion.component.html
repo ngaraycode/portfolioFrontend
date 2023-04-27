@@ -1,27 +1,28 @@
-<div class="row shadow-sm m-0 mt-2 bg-white">
-    <p class="fs-5 text-black-50 bg-warning mb-0">EDUCACION </p>
+<div class="row shadow-sm m-0 mt-3 bg-white">
+    <p class="fs-5 bg-dark text-white m-0 bg-opacity-75">EDUCACION </p>
 </div>
-<table class="table table-sm table-bordered bg-white mb-2">
+<table class="table table-sm table-bordered bg-white shadow-sm mb-1">
     <tbody>
         <tr *ngFor="let Educacion of expe">
-            <td class="align-middle text-center"><img class="" src="{{Educacion.fotoE}}" width="100px" height="55px">
+            <td width="120" class="align-middle text-center"><img class="" src="{{Educacion.fotoE}}" width="100px" height="90px">
             </td>
             <td>
-                <p class="fs-6 fw-bold text-muted">{{Educacion.nombreE}}</p>
-                <p class="fs-6 fst-italic">{{Educacion.fechaI}}-{{Educacion.fechaF}}</p>
-                <p class="fs-6">{{Educacion.descripcionE}}</p>
+                <p class="fs-6 fw-bold text-muted lh-sm">{{Educacion.nombreE}}</p>
+                <p class="fs-6 fst-italic lh-sm">{{Educacion.fechaI}}-{{Educacion.fechaF}}</p>
+                <p class="fs-6 lh-sm">{{Educacion.descripcionE}}</p>
             </td>
-            <td class="align-middle text-center" *ngIf="isLogged"><button class="btn btn-warning"
+            <td width="50" class="align-middle" *ngIf="isLogged"><button class="btn btn-warning"
                     routerLink="/editedu/{{Educacion.id}}"><i class="bi bi-pencil"></i></button></td>
 
-            <td class="align-middle text-center" *ngIf="isLogged"><button class="btn btn-danger"
+            <td width="50" class="align-middle text-center " *ngIf="isLogged"><button class="btn btn-danger"
                     (click)="delete(Educacion.id)"><i class="bi bi-x-circle"></i></button></td>
 
         </tr>
 
     </tbody>
-    <div class="p-2 " *ngIf="isLogged">
-        <button type="button" class="btn btn-success " routerLink="/nuevaedu" *ngIf="isLogged">
-            Agregar Nueva Educacion
+</table>
+    <div class="mb-5 p-0 align-middle text-end" *ngIf="isLogged">
+        <button type="button" class="btn btn-primary btn-sm" routerLink="/nuevaedu" *ngIf="isLogged">
+           + Agregar Nueva Educación
         </button>
     </div>

@@ -1,0 +1,70 @@
+<!--
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreP">Nombre del Proyecto</label>
+                    <input type="text" class="form-control" id="nombreP" name="nombreP" [(ngModel)]="nombreP"
+                        required="">
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha</label>
+                    <input type="text" class="form-control" id="fecha" name="fecha" [(ngModel)]="fecha"
+                        required="">
+                </div><div class="form-group">
+                    <label for="descripcion">Descripcion</label>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="descripcionP"
+                        required="">
+                </div>
+                <div class="form-group">
+                    <label for="link">Enlace</label>
+                    <input type="text" class="form-control" id="link" name="link"
+                        [(ngModel)]="link" required="">
+                </div>
+                <div class="form-group">
+                    <label for="fotoP">Foto descriptiva</label>
+                    <input type="text" class="form-control" id="fotoP" name="fotoP"
+                        [(ngModel)]="fotoP" >
+                </div>
+                <button class="btn btn-primary">Agregar Proyecto</button>
+            </form>
+        </div>
+    </div>
+</div>
+-->
+<div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="card p-2 m-2 bg-warning bg-gradient" style="width: 25rem;">
+        <div class="">
+            <div>
+                <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombreE" class="fs-5 text-dark">Nombre del Proyecto</label>
+                        <input type="text" class="form-control" id="nombreP" name="nombreP" [(ngModel)]="nombreP"
+                            required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="anio" class="fs-5 text-dark">Fecha</label>
+                        <input type="text" class="form-control" id="fecha" name="fecha" [(ngModel)]="fecha" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcionE" class="fs-5 text-dark">Descripción del Proyecto</label>
+                        <textarea type="text" class="form-control" id="descripcionP" rows="3" name="descripcionP"
+                            [(ngModel)]="descripcionP" required=""></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcionE" class="fs-5 text-dark">URL Imagen - Logo del Proyecto</label>
+                        <input type="text" class="form-control" id="fotoP" name="fotoP" [(ngModel)]="fotoP">
+                    </div>
+                    <div class="form-group">
+                        <label for="link" class="fs-5 text-dark">Enlace</label>
+                        <input type="text" class="form-control" id="link" name="link"
+                            [(ngModel)]="link" required="">
+                    </div>
+                    <br>
+                    <button class="btn btn-primary">Agregar Proyecto</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>

@@ -1,0 +1,27 @@
+<div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="card p-2 m-2 bg-warning bg-gradient" style="width: 25rem;">
+        <div class="">
+            <div>
+                <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombreE" class="fs-5 text-dark">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre"
+                            required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="anio" class="fs-5 text-dark">Porcentaje</label>
+                        <input type="text" class="form-control" id="porcentaje" name="porcentaje"
+                            [(ngModel)]="porcentaje" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcionE" class="fs-5 text-dark">URL Icono</label>
+                        <input type="text" class="form-control" id="urlImg" name="urlImg" [(ngModel)]="urlImg">
+                    </div>
+
+                    <br>
+                    <button class="btn btn-primary">Agregar Habilidad</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

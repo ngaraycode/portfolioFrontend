@@ -1,52 +1,29 @@
-<div class="row shadow-sm m-0 mt-2 bg-white">
-    <p class="fs-5 text-black-50 bg-warning mb-0">EXPERIENCIA </p>
+<div class="row shadow-sm m-0 mt-3 bg-white">
+    <p class="fs-5 bg-dark text-white m-0 bg-opacity-75">EXPERIENCIA </p>
 </div>
-<table class="table table-sm table-bordered bg-white mb-2">
+<table class="table table-sm table-bordered bg-white shadow-sm mb-1">
     <tbody>
         <tr *ngFor="let Experiencia of expe">
-            <td class="align-middle text-center"><img class="" src="{{Experiencia.fotoE}}" width="100px" height="55px">
+            <td width="120" class="align-middle text-center"><img class="" src="{{Experiencia.fotoE}}" width="100px"
+                    height="90px">
             </td>
             <td>
-                <p class="fs-6 fw-bold text-muted">{{Experiencia.nombreE}}</p>
-                <p class="fs-6 fst-italic">{{Experiencia.fechaI}}-{{Experiencia.fechaF}}</p>
-                <p class="fs-6">{{Experiencia.descripcionE}}</p>
+                <p class="fs-6 fw-bold text-muted lh-sm">{{Experiencia.nombreE}}</p>
+                <p class="fs-6 fst-italic lh-sm">{{Experiencia.fechaI}}-{{Experiencia.fechaF}}</p>
+                <p class="fs-6 lh-sm">{{Experiencia.descripcionE}}</p>
             </td>
-            <td class="align-middle text-center" *ngIf="isLogged"><button class="btn btn-warning"
+            <td width="50" class="align-middle text-center" *ngIf="isLogged"><button class="btn btn-warning"
                     routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil"></i></button></td>
-
-            <td class="align-middle text-center" *ngIf="isLogged"><button class="btn btn-danger"
+            <td width="50" class="align-middle text-center" *ngIf="isLogged"><button class="btn btn-danger"
                     (click)="delete(Experiencia.id)"><i class="bi bi-x-circle"></i></button></td>
-
         </tr>
-
     </tbody>
-    <div class="p-2 " *ngIf="isLogged">
-        <button type="button" class="btn btn-success " routerLink="/nuevaexp" *ngIf="isLogged">
-            Agregar Nueva Experiencia
-        </button>
-    </div>
+</table>
 
-<!--
-<div class="row shadow-sm mt-2 m-0  bg-white">
-    <p class="fs-5 text-black-50 bg-warning">EXPERIENCIA</p>
-    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 d-flex align-items-center">
-        <img class="mx-auto" src="./assets/joomla.png" width="140px" height="42px">
-    </div>
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-        <p class="fs-6 fw-bold text-muted">Desarrollo Web Joomla</p>
-        <p class="fs-6 fst-italic">2006-2008</p>
-        <p class="fs-6">Creación y administración de pagina web para una escuela</p>
-    </div>
+<div class="mb-5 mt-0 p-0 align-middle text-end" *ngIf="isLogged">
+    <button type="button" class="btn btn-primary btn-sm" routerLink="/nuevaexp" *ngIf="isLogged">
+        + Agregar Nueva Experiencia
 
-    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 d-flex align-items-center">
-        <img class="mx-auto" src="./assets/facepage.png" width="140px" height="60px">
-    </div>
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-        <p class="fs-6 fw-bold text-muted">Administrador de sitio en facebook</p>
-        <p class="fs-6 fst-italic">2012-present</p>
-        <p class="fs-6">Adminitracion de pagina turistica en facebook de la ciudad de Ituzaingó Corrientes</p>
-    </div>
-
+    </button>
 </div>
--->
 

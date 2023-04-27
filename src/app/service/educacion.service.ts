@@ -8,7 +8,9 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
-expURL = 'http://localhost:8080/educacion/'
+//expURL = 'http://localhost:8080/educacion/'
+expURL = 'https://backendnfg.onrender.com/educacion/'
+
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Educacion[]>{

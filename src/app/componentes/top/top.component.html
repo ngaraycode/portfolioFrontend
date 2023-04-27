@@ -1,12 +1,12 @@
-    <div class="row align-items-center bg-light bg-gradient border-2 border-bottom m-0 p-1">
+    <div class="row align-items-center bg-warning bg-gradient border-bottom border-secondary bg-opacity-75 shadow-sm m-0 p-1">
       <div class="col justify-content-start p-0">
-        <img src="./assets/arg-programa.png" height="60p" width="140p"> 
+        <img src="./assets/arg-programa.png" height="64p" > 
       </div>
         <div class="col-auto justify-content-end p-0">
-          <a href="/login"><img src="./assets/f.png" height="35p" width="35p"></a>
-          <img src="./assets/g.png" height="35p" width="35p">
-          <button type="button" class="btn btn-success" (click)="login()" *ngIf="!isLogged">INGRESAR</button>
-          <button type="button" class="btn btn-danger" (click)="onLogOut()" *ngIf="isLogged">SALIR</button>
+          <a  href="https://www.facebook.com/ngaray"><img class="m-0" src="./assets/f.png" height="38p" width="38p"></a>
+          <a  href="https://github.com/nico0cul/"><img class="m-1" src="./assets/g.png" height="38p" width="38p"></a>
+          <button class="m-1" type="button" class="btn btn-success" (click)="login()" *ngIf="!isLogged">INGRESAR</button>
+          <button class="m-1" type="button" class="btn btn-danger" (click)="onLogOut()" *ngIf="isLogged">SALIR</button>
           
           
         </div>

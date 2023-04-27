@@ -1,6 +1,14 @@
 
-    <div class="mt-2 position-relative">
-      <img src="./assets/h3.png" class="img-fluid">
+    <div class="mt-2 position-relative shadow-sm">
+      <img src={{header.nombre}} class="img-fluid shadow-sm" width="100%" height="100%">
     </div>
- <!-- <img src="./assets/h1.png" class="img-fluid">
-<img src="./assets/perfil.png" class="img-fluid translate-middle top-100 rounded-circle border border-5 border-warning" width="90px" height="90px" id="fotoperfil">  --> 
+    
+        <div class="mb-5 mt-1 p-0 align-middle text-end" *ngIf="isLogged" >
+          <button  class="btn btn-primary d-inline-flex btn-sm" routerLink="/editheader/{{header.id}}"><i class="bi bi-pencil"></i>Editar Header</button>
+        
+          
+      </div>
+
+      
+
+    

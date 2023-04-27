@@ -1,49 +1,24 @@
-<div class="mt-2 position-relative">
-    <img src="./assets/perfil.png" class="img-fluid translate-middle rounded-circle border border-5 border-warning"
-        width="90px" height="90px" id="fotoperfil">
+<div class="shadow-sm mt-2 position-relative">
+    <img src={{persona.fotoPerfil}} class="img-fluid translate-middle rounded-circle border border-4 border-warning border-opacity-75"
+        width="85px" height="60px" id="fotoperfil">
 
-    <div class="row shadow-sm align-items-center mt-0 m-0 p-0 bg-white">
+    <div class="row shadow-sm  mt-0 m-0 p-0 bg-white">
 
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
             <br>
             <br>
-            <p class="fs-4 fw-bold  text-center">{{persona.nombre}} {{persona.apellido}}</p>
-            <p class="fs-5 text-center fst-italic">{{persona.cargo}}</p>
-            <button *ngIf="isLogged" class="btn btn-warning" routerLink="/editacercade/{{persona.id}}"><i class="bi bi-pencil"></i></button>
-        </div>
+            <p class="fs-4 fw-bold text-center ">{{persona.nombre}} {{persona.apellido}}</p>
+            <p class="fs-5 text-center fst-italic ">{{persona.cargo}}</p>
+            <div class=" text-center ">
+            <button *ngIf="isLogged" class="btn btn-primary d-inline-flex btn-sm" routerLink="/editacercade/{{persona.id}}"><i class="bi bi-pencil"></i>Editar Perfil</button>
+            </div>
+            <br>
+            </div>
 
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 mt-0 p-0">
-            <p class="fs-5 text-black-50 bg-warning">SOBRE MÍ</p>
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 mt-0 p-1">
+            <p class="fs-4 shadow-sm text-white bg-warning bg-opacity-75">SOBRE MÍ</p>
             <p>{{persona.descripcion}}</p>
         </div>
 
     </div>
 </div>
-<!--
-<div class="mt-2 position-relative">
-    <img src="" class="img-fluid translate-middle rounded-circle border border-5 border-warning"
-        width="90px" height="90px" id="fotoperfil">
-
-    <div class="row shadow-sm align-items-center mt-0 m-0 p-0 bg-white">
-
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            <p class="fs-4 fw-bold  text-center">{{persona.nombre}} {{persona.apellido}}</p>
-            <p class="fs-5 text-center fst-italic">Full Stack Developer Jr</p>
-        </div>
-<div><button class="btn btn-warning"
-    routerLink="/editacercade/1"><i class="bi bi-pencil"></i></button>
-</div>
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 mt-0 p-0">
-            <p class="fs-5 text-black-50 bg-warning">SOBRE MÍ</p>
-            <p>Empresario, inversor y magnate sudafricano que también posee las nacionalidades canadiense y
-                estadounidense.
-                Es el fundador, consejero delegado e ingeniero jefe de SpaceX; inversor ángel, CEO y arquitecto de
-                productos
-                de Tesla, Inc.; fundador de The Boring Company; cofundador de Neuralink y OpenAI, aunque ya no tiene más
-                participación en OpenAI por desacuerdos en el rumbo de la empresa, además de ser el actual dueño de
-                Twitter.3​ </p>
-        </div>
-
-    </div>
-</div>
--->
