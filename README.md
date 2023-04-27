@@ -80,7 +80,7 @@ git clone ``` https://github.com/nico0cul/portofolioFrontend.git ```
   
   Un problema que surgió fue que en la versión 15 de Angular no se crea automáticamente la carpeta ```environments```
   por lo que no se instalan correctamente las dependencias de Firebase, por tal motivo se debe crear dicha
-  carpeta de forma manual, un problema de difícil percepción ya que no mostraba errores en ninguna parte.
+  carpeta de forma manual o actualizar angular.
 
 ## Crédito
 
